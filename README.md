@@ -14,7 +14,7 @@ Loan source data: Notes offered by Prospectus (https://www.lendingclub.com/info/
 The many available columns within the dataset were preprocessed accordingly, i.e. changing strings to numeric form using `pd.get_dummies()`, so that our feature and target variables, X and y, were selected for future modeling. The dataset was then split using `sklearn` `.model_selection` `import train_test_split` into X_train, X_test, y_train, and y_test variables for further resampling using the different learning algorithms chosen. For each sampling/learning algorithm, a `sklearn.metrics` `balanced_accuracy_score`, `confusion_matrix`, and `imblearn.metrics` `classification_report_imbalanced` was analyzed for performance metrics.
 
 ## Results:
-From https://www.scikit-yb.org/en/latest/index.html and https://dev.to/amananandrai/performance-measures-for-imbalanced-classes-2ojj
+From https://www.scikit-yb.org/en/latest/index.html and https://dev.to/amananandrai/performance-measures-for-imbalanced-classes-2ojj <br><br>
 `Precision = TP/(TP+FP)`
 `Recall = TP/(TP+FN)`
 `Specificity = TN/(TN+FP)`
